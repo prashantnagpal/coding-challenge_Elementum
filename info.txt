@@ -1,0 +1,9 @@
+Hi Elementum Team,
+
+Here are the few issues that I am aware of with my coding challenge submission.
+1) The director name under movie colllection title were not available in the api for movie collection and it doesn't make sense to make that many ajax calls separately to just pull off director names.
+2) For some reason ng-focus was not working on my system and I tried multiple browsers but still ng-focus and just ".focus" seems to be not responding and picking up the ":focus" psuedo selector.
+
+
+Thanks,
+Prashant
