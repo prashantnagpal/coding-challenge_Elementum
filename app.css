@@ -1,0 +1,158 @@
+@h1font-size: 24px;
+@h2font-size: 14px;
+@h1font-color: #1A9DBA;
+@h2font-color: #484949;
+
+body{
+	font: 14px Helvetica, arial;
+	color: #484949;
+	line-height: 18px;
+}
+
+
+
+.headerContainer{
+	width: 1200px;
+	height: 50px;
+	background-color: #000000;
+	margin: 0 auto; 
+}
+
+
+.columnContainer{
+	box-sizing: border-box;
+	width: 1200px;
+	height: 1000px;
+	margin: 0 auto;
+	border:	1px solid gray;
+	position: relative;
+	padding: 0 15px 0 0;
+	box-shadow: 0.05em 0.05em 0.8em gray, -0.05em 0.1em gray;
+
+}
+
+.leftColumn{
+	box-sizing: border-box;
+	width: 33%;
+	float: left;
+	position: absolute;
+	word-wrap: break-word;
+	padding: 10px 40px 10px 40px;
+	height: 100%;
+	background-color: #EFEBEB;
+}
+
+.rightColumn{
+	box-sizing:	border-box;
+	width: 66%;
+	float: right;
+	word-wrap: break-word;
+	padding: 10px 25px 10px 40px;
+	height: 100%;
+	box-shadow: -6px -1px 5px -4px gray;
+
+}
+
+h1{
+	font: bold 24px arial, sans-serif;
+	color: #1A9DBA;
+	text-transform: uppercase;
+}
+
+h2{
+	font: bold 14px arial, sans-serif;
+	color: #484949;
+	text-transform: uppercase;
+}
+
+hr{
+	margin: 4px 0 4px 0;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+}
+
+
+li{
+	box-sizing: border-box;
+	width: 50%;
+	height: 200px;
+/*	border: 1px solid red; */
+	float: left;
+	text-align: center;
+}
+
+
+.customImg{
+	border-radius: 50%;
+}
+
+.focus {
+	border: 9px solid #1A9DBA;
+}
+
+.container1{
+	width: 100%;
+	height: 40%;
+}
+
+.container2{
+	width: 100%;
+	height: 60%;
+	position: relative;
+}
+
+.dscrptCont{
+	padding: 10px 0 0 10px;
+}
+
+.blockImg{
+	display: block;
+	float: left;
+	padding-top: 20px;
+	margin-right: 40px;
+}
+
+.CreditsImgContainer{
+	width: 40%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.container2 li{
+
+	box-sizing: border-box;
+	width: 100%;
+	height: 80px;
+	/* border: 1px solid red; */
+	float: left;
+	padding: 10px 10px 10px 0;
+
+
+}
+
+.container2 .customImg{
+	border-radius: 50%;
+	display: block;
+	float: left;
+	position: absolute;
+}
+
+
+.textContainer{
+
+	float: left;
+	vertical-align: middle;
+	position: absolute;
+	left: 100px;
+}
+
+.profilePicContainer{
+	float: right;
+	position: absolute;
+	left: 270px;
+	box-sizing: border-box;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8" />
+<html>
+	<head>
+		<title>My Test App</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body ng-app="myApp">
+		<header class="headerContainer"></header>
+		<div class="columnContainer" ng-controller="movieController">
+			<div class="leftColumn"> 
+				<h1>Movies
+					<hr>
+				</h1>
+				<ul>
+
+					<li href="#" ng-repeat="items in collectionParts">
+						
+						<img class="customImg" src="{{imageHost+items.poster_path}}" alt="{{items.original_title + ' Poster'}}" height="122" width="122" ng-click="selectMovie(items,$event)" ng-focus="items.id == selectedMovie.id">
+						<h2>{{items.original_title}}</h2>
+			
+					</li>
+				</ul>
+			</div>
+			<div class="rightColumn">
+				<div class="container1">
+					<h1>{{selectedMovie.original_title}}
+						<hr>
+					</h1>
+						<img class="blockImg" src="{{imageHost+selectedMovie.poster_path}}" width="174" height="262">
+					
+					<div class="dscrptCont">
+						<h2>
+							Who made it?
+						</h2>
+						<span><strong>Director: </strong>{{directorName}}</span>
+						<br>
+						<span><strong>Writers: </strong>{{writers}}</span>
+						<br>
+						<span><strong>Stars: </strong>{{cast}}</span>
+						<br>
+						<br>
+					</div>
+					<h2>What's it about?</h2>
+					<p>{{movieDescription}}</p>
+				</div>
+				<div class="container2">
+					<h1>Movie Credits
+						<hr>
+					</h1>
+					<div class="CreditsImgContainer">
+						<ul>
+							<li ng-repeat="cast in castCredits|limitTo:5">
+
+								<img class="customImg" src="{{imageHost+ cast.profile_path}}" height="66" width="66" ng-click="selectedCast(cast)">
+								<p class="textContainer">
+									<strong>{{cast.name}}</strong>
+									<br>
+									<span>{{cast.character}}</span>
+								</p>
+
+							</li>
+
+							
+						</ul>
+
+						
+					</div>
+					<div class="profilePicContainer">
+							<img src="{{imageHost+ selectedPerson.profile_path}}" width="347" height="420">
+						</div>
+				</div>
+
+			</div>
+		</div>
+		
+
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="controller-movies.js"></script>
+		<script type="text/javascript" src="service-movielist.js"></script>	
+	</body>
+</html>
